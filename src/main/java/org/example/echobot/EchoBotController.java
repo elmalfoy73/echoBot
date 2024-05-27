@@ -14,10 +14,13 @@ public class EchoBotController {
     @Value("${vk.group.id}")
     private String groupId;
 
+    @Value("${vk.confirmation.code}")
+    private String confirmationCode;
+
     @PostMapping
     public String callback(@RequestBody VkRequest request) {
         if ("confirmation".equals(request.getType())) {
-            return "5a5feac3";
+            return confirmationCode;
         }
 
         if ("message_new".equals(request.getType())) {
