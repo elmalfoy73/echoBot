@@ -9,13 +9,8 @@
 
 ## Конфигурация
 
-Перед запуском приложения, настройте параметры в файле `src/main/resources/application.properties`:
-vk:
-  api:
-    token: "YOUR_VK_API_TOKEN"  # Токен доступа VK API
-  group:
-    id: "YOUR_GROUP_ID"          # Идентификатор группы VK
-  confirmation:
-    code: "YOUR_CONFIRMATION_CODE"  # Код подтверждения для VK
-server:
-  port: 8080                      # Порт для запуска приложения
+Перед запуском приложения, настройте параметры в файле `src/main/resources/application.properties`: 
+vk.api.token= # Токен доступа VK API  
+vk.group.id= # Идентификатор группы VK  
+vk.confirmation.code= # Код подтверждения для VK  
+server.port= # Порт для запуска приложения  
